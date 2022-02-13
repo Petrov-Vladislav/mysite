@@ -83,7 +83,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="{{route('article.create')}}" class="nav-link">
                   <p>Добавить статью</p>
                 </a>
               </li>
