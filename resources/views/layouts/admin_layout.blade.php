@@ -165,6 +165,7 @@
 <script src="/admin/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/admin/dist/js/pages/dashboard.js"></script>
+<script src="https://cdn.tiny.cloud/1/b2eq0xrw7lz48wm99guny929by8z9mx9mmmitknz08bk9gqh/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 <script src="/admin/admin.js"></script>
 </body>
 </html>

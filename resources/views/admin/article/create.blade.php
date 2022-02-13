@@ -35,12 +35,16 @@
                     </div>
                     <div class="form-group">
                         <label>Выберите категорию</label>
-                        <select name="cat_id" class="form-control">
+                        <select name="cat_id" class="form-control" required>
                             @foreach ($categories as $category)
                             <option value="{{$category['id']}}">{{$category['title']}}</option>
                             @endforeach
                         </select>
                       </div>
+                  </div>
+
+                  <div class="form-group">
+                    <textarea name="text" class="editor"></textarea>
                   </div>
   
                   <div class="card-footer">
