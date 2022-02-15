@@ -24,7 +24,7 @@
   <!-- Daterange picker -->
   <link rel="stylesheet" href="/admin/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
-  <link rel="stylesheet" href="/admin/plugins/summernote/summernote-bs4.min.css">
+  <link href="/admin/dist/css/colorbox.css" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -78,7 +78,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="{{route('article.index')}}" class="nav-link">
                   <p>Все статьи</p>
                 </a>
               </li>
@@ -165,7 +165,9 @@
 <script src="/admin/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/admin/dist/js/pages/dashboard.js"></script>
+<script type="text/javascript" src="/admin/dist/js/jquery.colorbox-min.js"></script>
 <script src="https://cdn.tiny.cloud/1/b2eq0xrw7lz48wm99guny929by8z9mx9mmmitknz08bk9gqh/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script type="text/javascript" src="/packages/barryvdh/elfinder/js/standalonepopup.js"></script>
 <script src="/admin/admin.js"></script>
 </body>
 </html>

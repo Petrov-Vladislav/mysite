@@ -16,7 +16,11 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        $articles = Article::orderBy('created_at', 'DESC')->get();
+
+        return view('admin.article.index', [
+            'articles' => $articles
+        ]);
     }
 
     /**
@@ -41,7 +45,14 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $article = new Article();
+        $article->title = $request->title;
+        $article->img = $request->img;
+        $article->text = $request->text;
+        $article->category_id = $request->category_id;
+        $article->save();
+
+        return redirect()->back()->withSuccess('Статья была успешно добавлена');
     }
 
     /**
@@ -63,7 +74,12 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        //
+        $categories = Category::orderBy('created_at', 'DESC')->get();
+        
+        return view('admin.article.edit', [
+            'categories' => $categories,
+            'article' => $article,
+        ]);
     }
 
     /**
@@ -75,7 +91,13 @@ class ArticleController extends Controller
      */
     public function update(Request $request, Article $article)
     {
-        //
+        $article->title = $request->title;
+        $article->img = $request->img;
+        $article->text = $request->text;
+        $article->category_id = $request->category_id;
+        $article->save();
+
+        return redirect()->back()->withSuccess('Статья была успешно обновлена');
     }
 
     /**
