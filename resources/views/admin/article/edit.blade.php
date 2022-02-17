@@ -55,7 +55,7 @@
     
                       <div class="form-group">
                         <label for="feature_image">Изображение статьи</label>
-                        <img src="/{{$article['img']}}" alt="" class="img-uploaded mb-2" style="display:block; width: 250px">
+                        <img src="{{$article['img']}}" alt="" class="img-uploaded mb-2" style="display:block; width: 250px">
                         <input type="text" class="form-control" id="feature_image" name="img" value="{{$article['img']}}" readonly>
                         <a href="" class="popup_selector" data-inputid="feature_image">Выбрать изображение</a>
                       </div>
