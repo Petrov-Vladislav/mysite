@@ -10,10 +10,7 @@ class ArticlesController extends Controller
 {
     public function listArticles() {
         $articles = Article::all();
-        $category = Article::find(1);
-        $category = $category->category->title;
 
-        
-        return view('main', ['articles' => $articles, 'category' => $category]);
+        return view('main', ['articles' => $articles]);
     }
 }

@@ -72,7 +72,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-newspaper"></i>
               <p>
-                Блог
+                Статьи
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
