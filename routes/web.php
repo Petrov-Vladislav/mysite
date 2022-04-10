@@ -24,6 +24,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/article/{id}', [ArticlesController::class, 'pageArticle'])->name('oneArticle');
+
 Route::middleware(['role:admin'])->prefix('admin_panel')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('homeAdmin');
 

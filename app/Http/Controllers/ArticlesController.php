@@ -11,6 +11,12 @@ class ArticlesController extends Controller
     public function listArticles() {
         $articles = Article::all();
 
-        return view('main', ['articles' => $articles]);
+        return view('site.main', ['articles' => $articles]);
+    }
+
+    public function pageArticle($id) {
+        $oneArticle = Article::where('id', $id)->first();
+
+        return view('site.article', ['oneArticle' => $oneArticle]);
     }
 }
