@@ -1,0 +1,23 @@
+#article :hover {
+    background-color: rgb(231, 248, 253);
+}
+
+#article {
+    border-bottom: 2px solid rgb(170, 230, 248);
+    margin-bottom: 20px;
+}
+
+.shorttext {
+    height: 31px;
+    overflow: hidden;
+    line-height: 16px;
+}
+
+.menu-categ {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+    margin-bottom: 40px;
+}

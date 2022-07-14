@@ -5,6 +5,7 @@
 @section('content')
   <section>
     @foreach ($articles as $article)
+    <div id="article">
       <div class="blog-entry ftco-animate d-md-flex fadeInUp ftco-animated">
         <img src="{{$article->img}}" width="200px" height="150px" alt="">
         <div class="ms-5 mb-5">
@@ -16,10 +17,11 @@
           {{-- <span><i class="icon-comment2 mr-2"></i>5 Comment</span> --}}
           </p>
           </div>
-          <p class="mb-4">{!!$article->text!!}</p>
+          <p class="shorttext mb-4">{!!$article->text!!}</p>
           <p><a href="{{route('oneArticle', $article['id'])}}" class="btn-custom">Читать дальше<span class="ion-ios-arrow-forward"></span></a></p>
         </div>
-        </div>
+      </div>
+    </div>
       @endforeach
   </section>
 @endsection

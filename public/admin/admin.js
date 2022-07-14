@@ -20,8 +20,9 @@ $(document).ready(function () {
 tinymce.init({
     selector: '.editor',
     height: 400,
-    plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+    plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak code',
     toolbar_mode: 'floating',
+    // toolbar: 'code',
     relative_urls: false,
     file_picker_callback : elFinderBrowser
   });
